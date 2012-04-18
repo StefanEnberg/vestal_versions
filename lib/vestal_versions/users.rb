@@ -5,7 +5,7 @@ module VestalVersions
     extend ActiveSupport::Concern
 
     included do
-      attr_accessor :updated_by
+      #attr_accessor :updated_by
       Version.class_eval{ include VersionMethods }
     end
 
