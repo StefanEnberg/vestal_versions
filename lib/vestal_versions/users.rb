@@ -16,7 +16,7 @@ module VestalVersions
     # Overrides the +version_attributes+ method to include user information passed into the
     # parent object, by way of a +updated_by+ attr_accessor.
     def version_attributes
-      super.merge(:user => updated_by)
+      super.merge(:user => updater)
     end
 
     # Instance methods added to VestalVersions::Version to accomodate incoming user information.
